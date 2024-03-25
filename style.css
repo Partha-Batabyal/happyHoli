@@ -11,6 +11,7 @@ body {
   color: #fff;
 }
 #main {
+  margin: 2px;
   padding: 14px;
   width: 100%;
   height: 100vh;
@@ -19,11 +20,22 @@ body {
   align-items: center;
 }
 .holi {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  font-size: 100px;
+  /* background-color: #fc0707; */
 }
 .holi p {
-  animation: move 2s ease infinite, COLOR 1s ease infinite,
+  font-size: 100px;
+  font-family: "Dancing Script", cursive;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-shadow: 5px -1px 20px #eeecec;
+  animation: move 1s ease infinite, COLOR 5s ease-in-out infinite,
     zoom 2s ease infinite;
 }
 @keyframes zoom {
@@ -41,7 +53,7 @@ body {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-40px);
+    transform: translateY(-60px);
   }
 }
 @keyframes COLOR {
@@ -71,10 +83,10 @@ body {
     color: #0730fc;
   }
   64% {
-    color: #4007fc;
+    color: #7507fc;
   }
   72% {
-    color: #9207fc;
+    color: #bf07fc;
   }
   80% {
     color: #fc07f8;
